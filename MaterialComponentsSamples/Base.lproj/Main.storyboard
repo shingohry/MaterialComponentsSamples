@@ -127,6 +127,96 @@
             </objects>
             <point key="canvasLocation" x="2308" y="1479"/>
         </scene>
+        <!--Activity Indicator View Controller-->
+        <scene sceneID="eKk-JI-fpi">
+            <objects>
+                <viewController id="5dK-sS-WoL" customClass="ActivityIndicatorViewController" customModule="MaterialComponentsSamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RrW-yd-zTr"/>
+                        <viewControllerLayoutGuide type="bottom" id="H8e-jx-2Ld"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F1a-2b-BFG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="kOD-SE-bsP">
+                                <rect key="frame" x="74.5" y="207.5" width="226.5" height="253"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indeterminate Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaJ-LY-Bc7">
+                                        <rect key="frame" x="0.0" y="0.0" width="226.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8Fl-nL-TfM">
+                                        <rect key="frame" x="0.0" y="26.5" width="80" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6W-gS-KXi">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="cH9-hN-jJW"/>
+                                                </constraints>
+                                                <state key="normal" title="start"/>
+                                                <connections>
+                                                    <action selector="startIndeterminateIndicator:" destination="5dK-sS-WoL" eventType="touchUpInside" id="xqi-vk-sVl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv2-bo-a3z">
+                                                <rect key="frame" x="48" y="35" width="32" height="30"/>
+                                                <state key="normal" title="stop"/>
+                                                <connections>
+                                                    <action selector="stopIndeterminateIndicator:" destination="5dK-sS-WoL" eventType="touchUpInside" id="xqz-rU-QVG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Determinate Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzP-Yq-QwB">
+                                        <rect key="frame" x="0.0" y="126.5" width="211.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eFy-pt-EzK">
+                                        <rect key="frame" x="0.0" y="153" width="80" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-HH-AMX">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="uPC-K4-Xm2"/>
+                                                </constraints>
+                                                <state key="normal" title="start"/>
+                                                <connections>
+                                                    <action selector="startDeterminateIndicator:" destination="5dK-sS-WoL" eventType="touchUpInside" id="NB0-mD-De0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDC-0Z-ymb">
+                                                <rect key="frame" x="48" y="35" width="32" height="30"/>
+                                                <state key="normal" title="stop"/>
+                                                <connections>
+                                                    <action selector="stopDeterminateIndicator:" destination="5dK-sS-WoL" eventType="touchUpInside" id="eie-p6-m5k"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kOD-SE-bsP" firstAttribute="centerX" secondItem="F1a-2b-BFG" secondAttribute="centerX" id="eRO-2i-10j"/>
+                            <constraint firstItem="kOD-SE-bsP" firstAttribute="centerY" secondItem="F1a-2b-BFG" secondAttribute="centerY" id="jL3-qS-GUT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wfO-A8-tjj"/>
+                    <connections>
+                        <outlet property="bottomStackView" destination="eFy-pt-EzK" id="wzU-xq-i9n"/>
+                        <outlet property="topStackView" destination="8Fl-nL-TfM" id="Ncn-dW-MSy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sb5-rt-FTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2308" y="2210.6446776611697"/>
+        </scene>
         <!--Dialog Content View Controller-->
         <scene sceneID="Ee4-65-zgo">
             <objects>
@@ -159,6 +249,7 @@
                         <segue destination="tgK-xg-vim" kind="relationship" relationship="viewControllers" id="0g3-nv-cKK"/>
                         <segue destination="1fk-FW-z4Y" kind="relationship" relationship="viewControllers" id="HCq-Ol-Pm9"/>
                         <segue destination="Tji-tc-n0L" kind="relationship" relationship="viewControllers" id="QkZ-cw-PYW"/>
+                        <segue destination="vim-8E-R3H" kind="relationship" relationship="viewControllers" id="uuk-i5-w6a"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wd3-xY-N88" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -221,6 +312,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yX-MZ-MIN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1368.8" y="12.143928035982009"/>
+        </scene>
+        <!--ActivityIndicator-->
+        <scene sceneID="AVd-Dn-8rB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vim-8E-R3H" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ActivityIndicator" id="zfM-rS-t2r"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="taq-tv-plg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5dK-sS-WoL" kind="relationship" relationship="rootViewController" id="a5J-I1-H0E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fR-XD-Rj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368.8" y="2210.6446776611697"/>
         </scene>
     </scenes>
 </document>
