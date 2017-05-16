@@ -34,3 +34,5 @@ class ThirdViewController: UIViewController {
         present(contentViewController!, animated: true, completion: nil)
     }
 }
+
+class DialogContentViewController: UIViewController {}
