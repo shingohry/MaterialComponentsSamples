@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MaterialComponents
+import MaterialComponents.MaterialButtons
 
 class ButtonsViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
