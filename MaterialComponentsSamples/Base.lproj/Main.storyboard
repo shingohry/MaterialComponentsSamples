@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Collections View Controller-->
         <scene sceneID="XjE-jJ-5BR">
             <objects>
-                <collectionViewController id="ngN-cu-Xp7" customClass="ViewController" customModule="MaterialComponentsSamples" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="ngN-cu-Xp7" customClass="CollectionsViewController" customModule="MaterialComponentsSamples" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="aNW-gH-8ip">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="2308" y="12.143928035982009"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Buttons View Controller-->
         <scene sceneID="N8Z-xn-NcV">
             <objects>
-                <viewController id="0FI-Gm-u5x" customClass="SecondViewController" customModule="MaterialComponentsSamples" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0FI-Gm-u5x" customClass="ButtonsViewController" customModule="MaterialComponentsSamples" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cel-XB-tPt"/>
                         <viewControllerLayoutGuide type="bottom" id="Xbm-fg-3x1"/>
@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="2308" y="742.5787106446777"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Dialogs View Controller-->
         <scene sceneID="SQD-42-2vN">
             <objects>
-                <viewController id="eOT-sF-zIg" customClass="ThirdViewController" customModule="MaterialComponentsSamples" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eOT-sF-zIg" customClass="DialogsViewController" customModule="MaterialComponentsSamples" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qXL-Ka-6aa"/>
                         <viewControllerLayoutGuide type="bottom" id="GLk-t6-K9G"/>

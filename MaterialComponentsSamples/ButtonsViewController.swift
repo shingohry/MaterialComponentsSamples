@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ButtonsViewController.swift
 //  MaterialComponentsSamples
 //
 //  Created by hiraya.shingo on 2017/05/12.
@@ -9,7 +9,7 @@
 import UIKit
 import MaterialComponents
 
-class SecondViewController: UIViewController {
+class ButtonsViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
@@ -19,7 +19,7 @@ class SecondViewController: UIViewController {
         flatButton.customTitleColor = UIColor.gray
         flatButton.setTitle("Flat Button", for: .normal)
         flatButton.sizeToFit()
-        flatButton.addTarget(self, action: #selector(SecondViewController.flatButtonDidTap), for: .touchUpInside)
+        flatButton.addTarget(self, action: #selector(ButtonsViewController.flatButtonDidTap), for: .touchUpInside)
         stackView.addArrangedSubview(flatButton)
         
         let raisedButton = MDCRaisedButton()
@@ -27,14 +27,14 @@ class SecondViewController: UIViewController {
         raisedButton.setElevation(4, for: .normal)
         raisedButton.setTitle("Raised Button", for: .normal)
         raisedButton.sizeToFit()
-        raisedButton.addTarget(self, action: #selector(SecondViewController.raisedButtonDidTap), for: .touchUpInside)
+        raisedButton.addTarget(self, action: #selector(ButtonsViewController.raisedButtonDidTap), for: .touchUpInside)
         stackView.addArrangedSubview(raisedButton)
         
         
         let floatingButton = MDCFloatingButton()
         floatingButton.setTitle("+", for: .normal)
         floatingButton.sizeToFit()
-        floatingButton.addTarget(self, action: #selector(SecondViewController.floatingButtonDidTap), for: .touchUpInside)
+        floatingButton.addTarget(self, action: #selector(ButtonsViewController.floatingButtonDidTap), for: .touchUpInside)
         stackView.addArrangedSubview(floatingButton)
     }
     

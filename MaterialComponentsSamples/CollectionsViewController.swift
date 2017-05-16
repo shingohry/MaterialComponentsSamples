@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CollectionsViewController.swift
 //  MaterialComponentsSamples
 //
 //  Created by hiraya.shingo on 2017/05/12.
@@ -9,7 +9,7 @@
 import UIKit
 import MaterialComponents.MaterialCollections
 
-class ViewController: MDCCollectionViewController {
+class CollectionsViewController: MDCCollectionViewController {
     let components = ["ActivityIndicator", "AnimationTiming", "AppBar", "ButtonBar", "Buttons", "CollectionCells", "CollectionLayoutAttributes", "Collections", "Dialogs", "FeatureHighlight", "FlexibleHeader", "HeaderStackView", "Ink"]
     
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class ViewController: MDCCollectionViewController {
 }
 
 // MARK: UICollectionViewDataSource
-extension ViewController {
+extension CollectionsViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return components.count
     }

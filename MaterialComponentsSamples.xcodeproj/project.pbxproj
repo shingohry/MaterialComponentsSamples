@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		83D667D8D7B0F4B765A644DC /* Pods_MaterialComponentsSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684907EEC4563E838406765F /* Pods_MaterialComponentsSamples.framework */; };
 		C9D899551EC559D1000FE38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D899541EC559D1000FE38C /* AppDelegate.swift */; };
-		C9D899571EC559D1000FE38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D899561EC559D1000FE38C /* ViewController.swift */; };
+		C9D899571EC559D1000FE38C /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D899561EC559D1000FE38C /* CollectionsViewController.swift */; };
 		C9D8995A1EC559D1000FE38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D899581EC559D1000FE38C /* Main.storyboard */; };
 		C9D8995C1EC559D1000FE38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D8995B1EC559D1000FE38C /* Assets.xcassets */; };
 		C9D8995F1EC559D1000FE38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D8995D1EC559D1000FE38C /* LaunchScreen.storyboard */; };
-		C9D899671EC5615A000FE38C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D899661EC5615A000FE38C /* SecondViewController.swift */; };
-		C9D899691EC567AF000FE38C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D899681EC567AF000FE38C /* ThirdViewController.swift */; };
+		C9D899671EC5615A000FE38C /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D899661EC5615A000FE38C /* ButtonsViewController.swift */; };
+		C9D899691EC567AF000FE38C /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D899681EC567AF000FE38C /* DialogsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +22,13 @@
 		684907EEC4563E838406765F /* Pods_MaterialComponentsSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialComponentsSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D899511EC559D1000FE38C /* MaterialComponentsSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialComponentsSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D899541EC559D1000FE38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9D899561EC559D1000FE38C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9D899561EC559D1000FE38C /* CollectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
 		C9D899591EC559D1000FE38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9D8995B1EC559D1000FE38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9D8995E1EC559D1000FE38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9D899601EC559D1000FE38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9D899661EC5615A000FE38C /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		C9D899681EC567AF000FE38C /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		C9D899661EC5615A000FE38C /* ButtonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
+		C9D899681EC567AF000FE38C /* DialogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
 		DCA7BDF9B14EF419A78DD3A5 /* Pods-MaterialComponentsSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialComponentsSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialComponentsSamples/Pods-MaterialComponentsSamples.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,9 +74,9 @@
 			isa = PBXGroup;
 			children = (
 				C9D899541EC559D1000FE38C /* AppDelegate.swift */,
-				C9D899561EC559D1000FE38C /* ViewController.swift */,
-				C9D899661EC5615A000FE38C /* SecondViewController.swift */,
-				C9D899681EC567AF000FE38C /* ThirdViewController.swift */,
+				C9D899561EC559D1000FE38C /* CollectionsViewController.swift */,
+				C9D899661EC5615A000FE38C /* ButtonsViewController.swift */,
+				C9D899681EC567AF000FE38C /* DialogsViewController.swift */,
 				C9D899581EC559D1000FE38C /* Main.storyboard */,
 				C9D8995B1EC559D1000FE38C /* Assets.xcassets */,
 				C9D8995D1EC559D1000FE38C /* LaunchScreen.storyboard */,
@@ -218,9 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9D899671EC5615A000FE38C /* SecondViewController.swift in Sources */,
-				C9D899571EC559D1000FE38C /* ViewController.swift in Sources */,
-				C9D899691EC567AF000FE38C /* ThirdViewController.swift in Sources */,
+				C9D899671EC5615A000FE38C /* ButtonsViewController.swift in Sources */,
+				C9D899571EC559D1000FE38C /* CollectionsViewController.swift in Sources */,
+				C9D899691EC567AF000FE38C /* DialogsViewController.swift in Sources */,
 				C9D899551EC559D1000FE38C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

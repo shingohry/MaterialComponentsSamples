@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  DialogsViewController.swift
 //  MaterialComponentsSamples
 //
 //  Created by hiraya.shingo on 2017/05/12.
@@ -9,7 +9,7 @@
 import UIKit
 import MaterialComponents.MaterialDialogs
 
-class ThirdViewController: UIViewController {
+class DialogsViewController: UIViewController {
     let dialogTransitionController = MDCDialogTransitionController()
     var contentViewController: DialogContentViewController!
     
