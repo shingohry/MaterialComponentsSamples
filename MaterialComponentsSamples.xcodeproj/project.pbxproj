@@ -17,6 +17,7 @@
 		C9D8995F1EC559D1000FE38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D8995D1EC559D1000FE38C /* LaunchScreen.storyboard */; };
 		C9D899671EC5615A000FE38C /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D899661EC5615A000FE38C /* ButtonsViewController.swift */; };
 		C9D899691EC567AF000FE38C /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D899681EC567AF000FE38C /* DialogsViewController.swift */; };
+		C9FFE41A1ECDA303007A6D02 /* WithFlexibleHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FFE4191ECDA303007A6D02 /* WithFlexibleHeaderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		C9D899601EC559D1000FE38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D899661EC5615A000FE38C /* ButtonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
 		C9D899681EC567AF000FE38C /* DialogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
+		C9FFE4191ECDA303007A6D02 /* WithFlexibleHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithFlexibleHeaderViewController.swift; sourceTree = "<group>"; };
 		DCA7BDF9B14EF419A78DD3A5 /* Pods-MaterialComponentsSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialComponentsSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialComponentsSamples/Pods-MaterialComponentsSamples.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				C9D899681EC567AF000FE38C /* DialogsViewController.swift */,
 				C94A9CC31ECABDFF00D8556E /* ActivityIndicatorViewController.swift */,
 				C94A9D011ECBFF9200D8556E /* AppBarViewController.swift */,
+				C9FFE4191ECDA303007A6D02 /* WithFlexibleHeaderViewController.swift */,
 				C9D899581EC559D1000FE38C /* Main.storyboard */,
 				C9D8995B1EC559D1000FE38C /* Assets.xcassets */,
 				C9D8995D1EC559D1000FE38C /* LaunchScreen.storyboard */,
@@ -228,6 +231,7 @@
 				C9D899671EC5615A000FE38C /* ButtonsViewController.swift in Sources */,
 				C9D899571EC559D1000FE38C /* CollectionsViewController.swift in Sources */,
 				C9D899691EC567AF000FE38C /* DialogsViewController.swift in Sources */,
+				C9FFE41A1ECDA303007A6D02 /* WithFlexibleHeaderViewController.swift in Sources */,
 				C94A9CC41ECABDFF00D8556E /* ActivityIndicatorViewController.swift in Sources */,
 				C9D899551EC559D1000FE38C /* AppDelegate.swift in Sources */,
 			);
