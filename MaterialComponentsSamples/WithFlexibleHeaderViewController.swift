@@ -12,6 +12,10 @@ import MaterialComponents.MaterialAppBar
 class WithFlexibleHeaderViewController: UITableViewController {
     let appBar = MDCAppBar()
     
+    override var childViewControllerForStatusBarStyle: UIViewController? {
+        return appBar.headerViewController
+    }
+    
     // When using MDCFlexibileHeaderController within a UINavigationController, setting the UINavigationController's navigationBarHidden property to YES results in the loss of the swipe-to-go-back feature associated with the controller.
     // To re-enable this feature whilst hiding the navigation controller's navigationBar we recommend setting a pointer to the current interactivePopGestureRecognizer's delegate in the viewWillAppear: method before setting the navigationBarHidden property to YES, setting the interactivePopGestureRecognizer's delegate to nil while the MDCFlexibileHeaderController's parent controller is actively on-screen in viewDidAppear:, then re-setting the interactivePopGestureRecognizer's delegate to the held pointer in the viewWillDisappear: method.
     
@@ -22,7 +26,7 @@ class WithFlexibleHeaderViewController: UITableViewController {
     
     // It is also possible to hide the status bar when shifting the Flexible Header off-screen.
     // Enable this behavior by setting the EnabledWithStatusBar behavior and implementing childViewControllerForStatusBarHidden on the parent view controller.
-    override var childViewControllerForStatusBarHidden: UIViewController {
+    override var childViewControllerForStatusBarHidden: UIViewController? {
         return appBar.headerViewController
     }
     
@@ -31,8 +35,14 @@ class WithFlexibleHeaderViewController: UITableViewController {
         
         print(#function)
         
-        // add the headerViewController as a child view controller.
         self.addChildViewController(appBar.headerViewController)
+        
+        title = "WithFlexibleHeader"
+        
+        appBar.navigationBar.tintColor = UIColor.white
+        appBar.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
+        appBar.headerViewController.headerView.backgroundColor = UIColor(white: 0.1, alpha: 1.0)
     }
     
     override func viewDidLoad() {
@@ -40,14 +50,7 @@ class WithFlexibleHeaderViewController: UITableViewController {
         
         print(#function)
         
-        // After all other views have been registered.
         appBar.addSubviewsToParent()
-        
-        appBar.navigationBar.title = "NextVC"
-        appBar.navigationBar.tintColor = UIColor.white
-        appBar.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-        
-        appBar.headerViewController.headerView.backgroundColor = UIColor(white: 0.1, alpha: 1.0)
         
         // Shifting a Flexible Header off-screen
         appBar.headerViewController.headerView.shiftBehavior = .enabledWithStatusBar
@@ -67,7 +70,6 @@ class WithFlexibleHeaderViewController: UITableViewController {
         if navigationController?.interactivePopGestureRecognizer?.delegate != nil {
             existingInteractivePopGestureRecognizerDelegate = navigationController?.interactivePopGestureRecognizer?.delegate!
         }
-        //        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -86,13 +88,6 @@ class WithFlexibleHeaderViewController: UITableViewController {
         if existingInteractivePopGestureRecognizerDelegate != nil {
             navigationController?.interactivePopGestureRecognizer?.delegate = existingInteractivePopGestureRecognizerDelegate!
         }
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        // Utilizing Top Layout Guide on Parent View Controller
-        appBar.headerViewController.updateTopLayoutGuide()
     }
 }
 

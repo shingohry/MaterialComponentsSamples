@@ -22,6 +22,11 @@ class ModalVCWithAppBarViewController: UIViewController {
     // Create an instance of MDCAppBar
     let appBar = MDCAppBar()
     
+    // MDCHeaderViewController instances are able to recommend a status bar style by inspecting the background color of the MDCFlexibleHeaderView. If you'd like to use this logic to automatically update your status bar style, implement childViewControllerForStatusBarStyle in your app's view controller.
+    override var childViewControllerForStatusBarStyle: UIViewController? {
+        return appBar.headerViewController
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -29,17 +34,9 @@ class ModalVCWithAppBarViewController: UIViewController {
         
         // add the headerViewController as a child view controller.
         self.addChildViewController(appBar.headerViewController)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
-        print(#function)
+        title = "WithAppBar"
         
-        // After all other views have been registered.
-        appBar.addSubviewsToParent()
-        
-        appBar.navigationBar.title = "VCWithAppBar"
         appBar.navigationBar.tintColor = UIColor.white
         appBar.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
@@ -49,6 +46,15 @@ class ModalVCWithAppBarViewController: UIViewController {
                                                                     style: .done,
                                                                     target: self,
                                                                     action: #selector(leadingBarButtonDidtap))
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print(#function)
+        
+        // After all other views have been registered.
+        appBar.addSubviewsToParent()
     }
     
     override func viewWillAppear(_ animated: Bool) {
