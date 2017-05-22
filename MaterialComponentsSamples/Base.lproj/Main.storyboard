@@ -370,7 +370,7 @@
             </objects>
             <point key="canvasLocation" x="2308" y="2937.481259370315"/>
         </scene>
-        <!--ModalVC With App Bar View Controller-->
+        <!--WithAppBar-->
         <scene sceneID="peN-2g-mfE">
             <objects>
                 <viewController id="IQA-lG-QLz" customClass="ModalVCWithAppBarViewController" customModule="MaterialComponentsSamples" customModuleProvider="target" sceneMemberID="viewController">
@@ -381,28 +381,21 @@
                     <view key="view" contentMode="scaleToFill" id="axf-f2-HMv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2u6-E4-gzS">
-                                <rect key="frame" x="171" y="318" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="5X7-SH-tX9" kind="show" id="bmZ-qc-JlW"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="2u6-E4-gzS" firstAttribute="centerX" secondItem="axf-f2-HMv" secondAttribute="centerX" id="a1Y-cz-Qgb"/>
-                            <constraint firstItem="2u6-E4-gzS" firstAttribute="centerY" secondItem="axf-f2-HMv" secondAttribute="centerY" id="aku-Fr-sba"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MXl-QX-cnp"/>
+                    <navigationItem key="navigationItem" title="WithAppBar" id="cmY-At-tqv">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="Cbm-NF-ian">
+                            <connections>
+                                <segue destination="5X7-SH-tX9" kind="show" id="W1V-G4-sp4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juK-vc-OhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3950" y="2937"/>
         </scene>
-        <!--With Flexible Header View Controller-->
+        <!--WithFlexibleHeader-->
         <scene sceneID="PRH-lR-KiK">
             <objects>
                 <tableViewController id="5X7-SH-tX9" customClass="WithFlexibleHeaderViewController" customModule="MaterialComponentsSamples" customModuleProvider="target" sceneMemberID="viewController">
@@ -417,11 +410,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="efe-Gv-gUg" id="kiU-fd-zT4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qZA-iH-QyU">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="44"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -761,10 +754,36 @@
                             <outlet property="delegate" destination="5X7-SH-tX9" id="CkV-As-q64"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="WithFlexibleHeader" id="O7F-BT-FFw">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="pZE-SA-jdN">
+                            <connections>
+                                <segue destination="T4C-Hr-xup" kind="show" id="mAO-8G-j3C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2m-01-heo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4756" y="2937"/>
+        </scene>
+        <!--WithHeaderStackView-->
+        <scene sceneID="1sM-i3-Fgq">
+            <objects>
+                <viewController id="T4C-Hr-xup" customClass="WithHeaderStackViewController" customModule="MaterialComponentsSamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zCJ-5G-5eb"/>
+                        <viewControllerLayoutGuide type="bottom" id="j9p-Z2-v71"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9vV-Ud-Er2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WithHeaderStackView" id="BGX-St-3wE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j9X-d8-nVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5508" y="2937"/>
         </scene>
         <!--AppBar-->
         <scene sceneID="eTT-Dh-pHb">

@@ -37,8 +37,6 @@ class WithFlexibleHeaderViewController: UITableViewController {
         
         self.addChildViewController(appBar.headerViewController)
         
-        title = "WithFlexibleHeader"
-        
         appBar.navigationBar.tintColor = UIColor.white
         appBar.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         

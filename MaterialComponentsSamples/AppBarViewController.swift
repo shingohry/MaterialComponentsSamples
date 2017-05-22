@@ -35,8 +35,6 @@ class ModalVCWithAppBarViewController: UIViewController {
         // add the headerViewController as a child view controller.
         self.addChildViewController(appBar.headerViewController)
         
-        title = "WithAppBar"
-        
         appBar.navigationBar.tintColor = UIColor.white
         appBar.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
